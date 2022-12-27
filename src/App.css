@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+nav {
+    background: #ee9972;
+}
+nav a {
+    color: #edefee;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item{
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+    padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.nav-item:hover{
+    background-color: #fff;
+    color: black;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-body{
+
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10
+    
+    
+    px 0px rgba(0,0,0,1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    border:1px solid #ccc;
+    color: black;
+    margin-top: 4rem;
+    border-radius: .5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.form{
+    display: flex;
+    flex-direction: column ;
+    gap: .5rem;
+    margin: 2rem;
+}
+
+
+
+
+.form input{
+    height: 2.5rem;
+    font-size: inherit;
+    border-radius: .5rem;
+    padding: 5px;
+    border: 1px solid #cccccc;
+
+}
+
+.form input:focus{
+    outline: none;
+    border: 2px solid #cccccc;
+    
+}
+
+.form-btn{
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: 1px solid #cccccc;
+    font-size: inherit;
+
+    margin-top: 2rem;
+
+}
+
+.more-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 2rem;
+
+}
+
+
+.not-completed{
+    font-weight: bold;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+.todo{
+    margin-top:.5rem;
 }
